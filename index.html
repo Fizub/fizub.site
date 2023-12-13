@@ -12,15 +12,32 @@
     <div class="aboutme">
         <h1>Hey! I'm Daniel / Danyzimo / Fizub, whatever you would call me. I live in Czechia in prague. If you are wondering what games I play: Gorilla Tag and Roblox. I'm also an UGC Creator in Roblox.</h1>
     </div>
-
+    <div class="buttons">
+        <input type="button" value="C" id="contacts">
+    </div>
 </body>
 </html>
 
 <script>
-    
+    var brotha = document.getElementById("contacts")
+
+    brotha.addEventListener("mouseleave", () => {
+        brotha.value = "C"
+        brotha.style.width = "24px"
+    })
+    brotha.addEventListener("mouseenter", () => {
+        brotha.value = "Contacts"
+        brotha.style.width = "80px"
+        brotha.style.left = "75px"
+    })
+    brotha.addEventListener("click", () => {
+        document.URL = "http://fizub.site/contacts"
+    })
 </script>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@200&display=swap');
+
     .parralax{
         background-image: url("resources/background.jpg");
 
@@ -44,5 +61,18 @@
         color: black;
         background-color: rgb(255, 255, 255);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #contacts{
+        border-color: black;
+        background-color: black;
+        color: azure;
+        font-family: 'Poppins', sans-serif;
+        scale: 3;
+        border-top: black;
+        border-radius: 20px;
+        position: relative;
+        transition: cubic-bezier(0.23, 1, 0.320, 1) 1s;
+        left: 70px;
+        width: 24px;
     }
 </style>
