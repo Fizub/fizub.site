@@ -1,2 +1,2 @@
 Privacy and use in our web:
-Right now we don't use any of your privacy in our web: "fizub.site", I use: Contacts.
+Right now we use: Cookies - in https://fizub.site/projects/clicker/ for getting your total clicks. - 
