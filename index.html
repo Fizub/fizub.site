@@ -14,13 +14,23 @@
     </div>
     <div class="buttons">
         <input type="button" value="C" id="contacts">
-        <input type="url" name="Clicking game" id="https://fizub.site/projects/clicker">
+        <input type="button" value="CG" id="CG" style="position: absolute; left: 6%;border-color: black;
+        background-color: black;
+        color: azure;
+        font-family: 'Poppins', sans-serif;
+        scale: 3;
+        border-top: black;
+        border-radius: 20px;
+        position: relative;
+        transition: cubic-bezier(0.23, 1, 0.320, 1) 1s;
+        width: 32px;">
     </div>
 </body>
 </html>
 
 <script>
     var brotha = document.getElementById("contacts")
+    var cg = document.getElementById("CG")
 
     brotha.addEventListener("mouseleave", () => {
         brotha.value = "C"
@@ -33,6 +43,20 @@
     })
     brotha.addEventListener("click", () => {
         document.location = "http://fizub.site/contacts"
+    })
+
+    cg.addEventListener("mouseleave", () => {
+        cg.value = "CG"
+        cg.style.width = "32px"
+        cg.style.left = "140px"
+    })
+    cg.addEventListener("mouseenter", () => {
+        cg.value = "Clicker Game"
+        cg.style.width = "100px"
+        cg.style.left = "200px"
+    })
+    cg.addEventListener("click", () => {
+        document.location = "http://fizub.site/projects/clicker"
     })
 </script>
 
